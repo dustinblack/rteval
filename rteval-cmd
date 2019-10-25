@@ -157,9 +157,6 @@ def parse_options(cfg, parser, cmdargs):
                       action='store_true', default=False,
                       help='print rteval version and exit')
 
-    if not cmdargs:
-        cmdargs = ["--help"]
-
     (cmd_opts, cmd_args) = parser.parse_args(args = cmdargs)
     if cmd_opts.rteval___version:
         print("rteval version %s" % RTEVAL_VERSION)
